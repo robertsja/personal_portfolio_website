@@ -19,14 +19,87 @@
                     <li><a href="">Contacts</a></li>
                 </ul>
             </nav>
-            <div class = "header-text">
-                <p>Computer Science Graduate</p>
-                <h1>Hi, I'm <span>Jarrod Roberts</span><br> from New Zealand</h1>
-            </div>
-            <div class = "header-img">
-                <img src = "images/ProfilePicture.jpg" alt="Jarrod Roberts">
+            <div class="header-content-container">
+                <div class = "header-img">
+                    <div class = "image-container">
+                        <img src = "images/ProfilePicture.jpg" alt="Jarrod Roberts">
+                    </div>
+                </div>
+                <div class = "header-text">
+                    <p>Computer Science Graduate</p>
+                    <h1>Hi, I'm <span>Jarrod Roberts</span><br> from New Zealand</h1>
+                </div>
+                
             </div>
         </div>
     </div>
+ <!----------------- about ------------------->
+    <div id ="about">
+        <div class = "container">
+            <div class="about-text">
+                <h2 class="subtitle"> Everything About <span>ME</span>...</h2>
+                <p>Human future is software and data. As a 3rd year student in Computer Science, 
+                    Jarrod is best equipping himself to have a skillset that will be able to thrive in this future. 
+                    He is passionate about learning new skills and creating solutions to problems.<br><br>
+                    Meeting new people and having a good chat is an easy task for Jarrod. 
+                    He backs this up with experience as a Data Consultant intern and a Brand Ambassador, 
+                    both roles (especially the brand ambassador role) requiring the ability to create relationships with 
+                    clients and new people. This skill allows him to slot into any group and be a 
+                    good team player both in the workplace and in free time.<br><br>
+                    Jarrod strives for perfection (even though in his mind it is never achievable) 
+                    and wants to excel in whatever future he finds himself in. 
+                    He is always discovering new skills and interests, whether that be football, 
+                    movies, or personal projects and loves a good movie. 
+                    He is open to any opportunity that may be available, 
+                    so if you’re interested in his skillset then flick him a message, 
+                    or give him a movie recommendation in a PM.</p>
+            </div>
+            <div class="tab-titles">
+                <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                <p class = "tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id = "skills">
+                <ul>
+                    <li><span>Data Engineering</span><br>Transforming data using SQL</li>
+                    <li><span>Effictive Communication</span><br>Transforming data using SQL</li>
+                    <li><span>Quick Learner</span><br>Transforming data using SQL</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "experience">
+                <ul>
+                    <li><span>Project 1</span><br>Transforming data using SQL</li>
+                    <li><span>Project 2</span><br>Transforming data using SQL</li>
+                    <li><span>Project 3</span><br>Transforming data using SQL</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id = "education">
+                <ul>
+                    <li><span>UoA</span><br>Transforming data using SQL</li>
+                    <li><span>Snowflake University</span><br>Transforming data using SQL</li>
+                    <li><span>Onslow College</span><br>Transforming data using SQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
 </body>
 </html>
