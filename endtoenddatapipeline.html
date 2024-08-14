@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Jarrod Roberts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/ab03aed3a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "images/JarrodRobertsLogo.png" alt="Jarrod Roberts Logo" class = "logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="index.html#contact">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-content-container">
+                <div class = "header-img">
+                    <div class = "image-container">
+                        <img src = "images/pipeline.png" alt="pipeline image">
+                    </div>
+                </div>
+                <div class = "header-text">
+                    <h1><span>End-to-End</span><br>Data Pipeline</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ------------- Description ---------------->
+     <div id="description">
+        <div class="container">
+            <div class="description-content">
+                <div class="description-text">
+                    <h2 class="subtitle"><span>Project</span> Description</h2>
+                    <p>For this project, I created an end-to-end data pipeline that gathered job data from a job board, cleaned it, and reported on it using PowerBI. The pipeline was created using Python, Fabric, and PowerBI</p>
+                    <p><br><strong>The project was composed of 4 stages:</strong>
+                        <ul>
+                            <li>Project Requirements and Scope Definition</li>
+                            <li>Data Gathering using Python WebScraper</li>
+                            <li>Data Transformation using Microsoft Fabric and PySpark/SparkSQL</li>
+                            <li>Reporting using PowerBI</li>
+                        </ul><br>
+                    <p>This project was done in an agile environment, and therefore we went through the Kick-off process and documented 
+                        the project requirements and scope. We the started the development of the Python Webscraper. We used 
+                        Selenium, Chromium and BeautifulSoup to gather the data. The data was exported to a CSV because we couldn't find out how
+                        to host the webscraper on Fabric as this was when Fabric just got released.
+                        <br><br>
+                        We used Bronze Silver and Gold tables in Microsoft Fabric to transform and organise data. We also used
+                        SCD2 to manage the data and make sure we were only reporting on the latest data. We used PySpark and PySql Notebooks to 
+                        do this. 
+                        <br><br>
+                        Finally, we reported our findings using a PowerBI dashboard. We used the data from the Gold table to create the dashboard.
+                        <br><br>
+                        <strong>Final Thoughts</strong><br>
+                        This project was a great learning experience as it was one of the first times that I've been available
+                        to take different skills that I've worked on over the years (Python, Data Engineering and PowerBI) and 
+                        apply it in the same real world project. I was able to see the full lifecycle of a data project from start to finish.
+                        <br><br>
+                        Some setbacks we had were having to learn how to use Selenium and Chromium, and learning the complexities of webscraping.
+                        In particular, stopping popups. I noticed that the same pop-up showed up every time you opened the website 
+                        we were scraping, so we could easily implement code to close the pop-up if it showed. However, we know that as soon as the website
+                        gets changed, our webscraper won't work. API's are much better for this. Another setback we had was issues with Fabric compute and running
+                        external scripts through Fabric. This project was done very early 2024 when Fabric had just been released, so we were trying to break it as well
+                        as use it for the project. It was a good tool to use, and it was cool how it integrated all the Microsoft Data tools. I would like to learn more about it.
+                        <br><br>
+                        This was a very fun project, and I look forward to seeing how Fabric will be used in the future. 
+                    </p>
+                </div>
+                <div class="description-image">
+                    <img src="images/pipeline-framework.png" alt="pipeline tools">
+                    <img src="images/pipeline.png" alt="pipeline image">
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- -------------Projects ---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="subtitle">My <span>Work</span><br></h2>
+            <div class="worklist">
+                <div class="work">
+                    <img class="work-image" src="images/pipeline.png">
+                    <div class="layer">
+                        <h3>End-to-End Datapipeline</h3>
+                        <p>Gathering job data and reporting on it using Python, Fabric, and PowerBI
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-image" src="images/gameslibrary.png">
+                    <div class="layer">
+                        <h3>Game Library Webpage</h3>
+                        <p>Created a games library, similar to steam using Python, Flask and SQL.
+                        </p>
+                        <a href="gameslibrary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-image" src="images/reddit.png">
+                    <div class="layer">
+                        <h3>Reddit Post Puller</h3>
+                        <p>Automatically pulled posts from the Confessions page into a CSV file for content creation.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-image" src="images/concert.webp">
+                    <div class="layer">
+                        <h3>Concert Booking Web Service</h3>
+                        <p>Created a Servlet based web service that allowed users to book concerts and view their bookings.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-image" src="images/soccer.jpeg">
+                    <div class="layer">
+                        <h3>Football Data Pipeline</h3>
+                        <p>My first data pipeline using manual extraction to CSV, Azure Data Lake, Fivetran and PowerBI.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- Insert more projects here using above format -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

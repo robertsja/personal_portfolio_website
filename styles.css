@@ -347,3 +347,44 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* ------- Description ------- */
+
+#description .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.description-text {
+    flex: 2;
+    padding-right: 20px; /* Space between text and images */
+}
+
+.description-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-image img {
+    max-width: 80%;
+    margin-bottom: 20px; /* Space between images */
+    border-radius: 40px;
+}
+
+.description-text ul{
+    margin-left: 5%;
+}
+
+.description-text ul li{
+    list-style: number;
+}
